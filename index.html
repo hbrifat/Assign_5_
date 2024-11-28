@@ -27,7 +27,7 @@
             </div>
             <div class="flex space-x-1 items-center">
                 <img src="assets/coin.png" alt="coin">
-                <p class="font-bold text-xl"> <span class="main-account-balance">5500</span> BDT</p>
+                <p class="font-bold text-xl"> <span id="main-account-balance">5500</span> BDT</p>
             </div>
          </nav>
         </section>
@@ -35,10 +35,10 @@
          <!-- Toggle section -->
           <section class="pt-7 container mx-auto flex justify-center">
             <div class="pt-7">
-                <button class="btn sm:btn-sm md:btn-md lg:btn-lg bg-lime-300 font-bold text-lg me-3">
+                <button id="donation-btn" class="btn sm:btn-sm md:btn-md lg:btn-lg bg-lime-300 font-bold text-lg me-3">
                     Donation
                 </button>
-                <button class="btn border border-gray-500 sm:btn-sm md:btn-md lg:btn-lg font-bold text-lg">
+                <button id="history-btn" class="btn border border-gray-500 sm:btn-sm md:btn-md lg:btn-lg font-bold text-lg">
                     History
                 </button>
             </div>
@@ -47,8 +47,9 @@
      </header>
 
      <!-- main section -->
-      <main class="container mx-auto"> 
-        <section class="donate-cards-section mt-20">
+      <main id="main" class="container mx-auto"> 
+        <!-- Donation Section -->
+        <section id="donate-cards-section" class="mt-20">
             <!-- card one -->
             <div class="card lg:card-side bg-base-100 shadow-md border border-gray-50 p-3 m-3 md:p-5 md:m-5">
                 <figure class="rounded-xl">
@@ -66,26 +67,33 @@
                     </button>
                   </div>
 
-                  <h2 id="flood-donate-title" class="card-title">
-                    Donate for Flood at Noakhali, Bangladesh
+                  <h2 class="card-title">
+                    Donate for <span id="flood-donate-title">
+                      Flood at Noakhali, Bangladesh
+                    </span>
                   </h2>
                   <p id="flood-donate-info" class="py-5">
-                    The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
+                    The recent floods in Noakhali have caused significant damage to homes infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
                   </p>
 
-                  <input type="text" placeholder="Type Donate Amount Here" class="input input-bordered w-full input-info" />
+                  <input type="text" placeholder="Type Donate Amount Here" id="flood-donate-input" class="input input-bordered w-full input-info" />
 
                   <div class="card-actions py-3">
-                    <button class="btn btn-block bg-lime-300 font-bold text-lg">Donate Now</button>
+                    <button id="flood-donate-btn" class="btn btn-block bg-lime-300 font-bold text-lg">Donate Now</button>
                   </div>
                 </div>
             </div>
+        </section>
+        <!-- History section -->
+        <section id="history-section" class="hidden">
+
         </section>
       </main>
     
 
     <!-- Javascript -->
      <script src="js/script.js"></script>
+     <script src="js/utilities.js"></script>
      <script src="js/tailwind.config.js"></script>
 </body>
 </html>
