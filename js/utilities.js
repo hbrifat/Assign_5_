@@ -33,14 +33,14 @@ function clearInput(id){
 
 // validate input data
 
-function validateInput(inputValue, accountBalance){
+function validateInput(inputValue, accountBalance, id){
     if(isNaN(inputValue) || inputValue <= 0){
         alert('Invalid amount. Try later!!!');
-        clearInput('flood-donate-input');
+        clearInput(id);
         return false;
     } else if(inputValue > accountBalance){
         alert('Insufficient Balance!!!')
-        clearInput('flood-donate-input');
+        clearInput(id);
         return false;
     } else {
         return true;

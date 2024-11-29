@@ -27,7 +27,7 @@
             </div>
             <div class="flex space-x-1 items-center">
                 <img src="assets/coin.png" alt="coin">
-                <p class="font-bold text-xl"> <span id="main-account-balance">5500</span> BDT</p>
+                <p class="font-bold text-xl"> <span id="main-account-balance">10000</span> BDT</p>
             </div>
          </nav>
         </section>
@@ -49,7 +49,7 @@
      <!-- main section -->
       <main id="main" class="container mx-auto"> 
         <!-- Donation Section -->
-        <section id="donate-cards-section" class="mt-20">
+        <section id="donate-cards-section" class="mt-20 space-y-8">
             <!-- card one -->
             <div class="card lg:card-side bg-base-100 shadow-md border border-gray-50 p-3 m-3 md:p-5 md:m-5">
                 <figure class="rounded-xl">
@@ -83,6 +83,74 @@
                   </div>
                 </div>
             </div>
+
+            <!-- card two -->
+            <div class="card lg:card-side bg-base-100 shadow-md border border-gray-50 p-3 m-3 md:p-5 md:m-5">
+              <figure class="rounded-xl">
+                <img class="size-full"
+                  src="./assets/feni.png"
+                  alt="feni-flood" />
+              </figure>
+              <div class="card-body max-w-full lg:w-2/3">
+                <!-- Donated Amount -->
+                <div>
+                  <button class="btn btn-sm">
+                      <img class="size-max" src="./assets/coin.png" alt="coin">
+
+                      <p class=""> <span id="relief-donated-amount">0</span> BDT</p>
+                  </button>
+                </div>
+
+                <h2 class="text-xl font-bold md:text-2xl">
+                  Donate for <span id="relief-donate-title">
+                    Flood Relief at Feni, Bangladesh
+                  </span>
+                </h2>
+                <p id="relief-donate-info" class="py-5">
+                  The recent floods in Feni have caused significant damage to homes, infrastructure. We urgently need your help to provide those affected with food, clean water, medical supplies, and shelter. Your generous donation can make a difference in the lives of these vulnerable communities, helping them rebuild and recover from this disaster. Every contribution counts, no matter the size. Join us in our efforts to support the flood victims and bring hope to those in need. 
+                </p>
+
+                <input type="text" placeholder="Type Donate Amount Here" id="relief-donate-input" class="input input-bordered w-full input-info" />
+
+                <div class="card-actions py-3">
+                  <button id="relief-donate-btn" class="btn btn-block bg-lime-300 font-bold text-lg">Donate Now</button>
+                </div>
+              </div>
+          </div>
+
+          <!-- card three -->
+          <div class="card lg:card-side bg-base-100 shadow-md border border-gray-50 p-3 m-3 md:p-5 md:m-5">
+            <figure class="rounded-xl">
+              <img class="size-full"
+                src="./assets/quota-protest.png"
+                alt="quota-protest-injured" />
+            </figure>
+            <div class="card-body max-w-full lg:w-2/3">
+              <!-- Donated Amount -->
+              <div>
+                <button class="btn btn-sm">
+                    <img class="size-max" src="./assets/coin.png" alt="coin">
+
+                    <p class=""> <span id="quota-donated-amount">0</span> BDT</p>
+                </button>
+              </div>
+
+              <h2 class="text-xl font-bold md:text-2xl">
+                Aid for <span id="quota-donate-title">
+                  Injured in the Quota Movement
+                </span>
+              </h2>
+              <p id="quota-donate-info" class="py-5">
+                As of July 19th, over 100 students have been shot dead, and thousands more have been injured. We are seeking your help to ensure that these students receive the urgent medical care they need. In addition to providing immediate relief, we aim to support these students in the aftermath of the protests, helping them to rebuild their lives and continue their education.
+              </p>
+
+              <input type="text" placeholder="Type Donate Amount Here" id="quota-donate-input" class="input input-bordered w-full input-info" />
+
+              <div class="card-actions py-3">
+                <button id="quota-donate-btn" class="btn btn-block bg-lime-300 font-bold text-lg">Donate Now</button>
+              </div>
+            </div>
+        </div>
 
             <!-- Modal -->
             <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
