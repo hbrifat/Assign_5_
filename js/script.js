@@ -31,17 +31,20 @@ document.getElementById('flood-donate-btn').
             const floodDonatedAmountValue = getTextValueFromId('flood-donated-amount');
     
             document.getElementById('flood-donated-amount').innerText = floodDonatedAmountValue + floodDonateInputValue;
+
+            // clear the input
+            clearInput('flood-donate-input');
+            
+            // Show successfull confirmation
+            alert("Donation successfull! Thank you!");
+
+            // transaction history
+            const date = new Date();
+
+            putRecordInHistory('flood-donate-title', floodDonateInputValue, date);
         }
 
-        // clear the input
-
-        clearInput('flood-donate-input');
-
-        // transaction history
-
-        const date = new Date();
-
-        putRecordInHistory('flood-donate-title', floodDonateInputValue, date);
+        
 
     })
 
