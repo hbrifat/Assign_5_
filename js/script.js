@@ -36,7 +36,10 @@ document.getElementById('flood-donate-btn').
             clearInput('flood-donate-input');
             
             // Show successfull confirmation
-            alert("Donation successfull! Thank you!");
+            // alert("Donation successfull! Thank you!");
+
+            // modal for successful donation
+            my_modal_5.showModal();
 
             // transaction history
             const date = new Date();

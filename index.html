@@ -67,7 +67,7 @@
                     </button>
                   </div>
 
-                  <h2 class="card-title">
+                  <h2 class="text-xl font-bold md:text-2xl">
                     Donate for <span id="flood-donate-title">
                       Flood at Noakhali, Bangladesh
                     </span>
@@ -83,6 +83,29 @@
                   </div>
                 </div>
             </div>
+
+            <!-- Modal -->
+            <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+
+            <dialog id="my_modal_5" class="modal modal-middle">
+              <div class="modal-box px-5 md:p-9 flex flex-col items-center">
+                <h2 class="text-2xl font-bold">Congrats!</h2>
+                <div>
+                  <img class="py-3" src="assets/coin.png" alt="coin">
+                </div>
+                <p class="py-4">
+                  You Have Donated for Humankind
+                </p>
+                <p class="font-bold text-lg">Successfully</p>
+                <div class="modal-action">
+                  <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn">Close confirmation</button>
+                  </form>
+                </div>
+              </div>
+            </dialog>
+
         </section>
         <!-- History section -->
         <section id="history-section" class="hidden">
